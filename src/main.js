@@ -3,6 +3,17 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
+import "normalize.css/normalize.css";
+import ElementUI from "element-ui";
+import "element-ui/lib/theme-chalk/index.css";
+import locale from "element-ui/lib/locale/lang/zh-CN";
+import "@/styles/index.scss";
+
+import "@/icons"; // icon
+import "@/permission"; // permission control
+
+Vue.use(ElementUI, { locale });
+
 Vue.config.productionTip = false;
 
 new Vue({
